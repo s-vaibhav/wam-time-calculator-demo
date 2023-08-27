@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.title("WAM Time Calculator")
+st.title("WAM Time Calculator Demo")
 st.code('''Estimate the number of hours for all your units combined per week required to 
 achieve your desired WAM this trimester. These number of hours includes all 
 study time, including time for attending class, making notes, doing assignments 
@@ -24,10 +24,12 @@ st.title(f"Total of {slide2 * slide3} hours")
 f"of study time per week for {slide3} unit/s to obtain a {slide1} WAM. {slide2 * slide3} hours is {round(((slide2*slide3)/(5*24))*100, 1)}% of the workweek (Mon-Fri)."
 
 st.markdown("---")
+
 st.markdown("#### Leave your feedback")
 radio = st.radio("Was this app helful to you?", ["Yes :)", "No :("])
 st.text_area("Comments (optional)")
 feedbacksubmit_button = st.button("Submit", key=2)
+
 if feedbacksubmit_button:
     if radio == "Yes :)":
         st.success("This is a demo app, feedback doesn't actually get submitted.")
