@@ -9,7 +9,7 @@ how fast or slow you need to work.''', language=None)
 
 st.markdown('''---''')
 
-st.markdown("#### 1. WAM Time equation (as recommended by the university)")
+st.markdown("#### 1. WAM Time equation")
 st.code("50 WAM = 10 hours per unit per week")
 
 st.markdown("#### 2. Select desired WAM for this trimester to estimate the hours required per unit per week")
